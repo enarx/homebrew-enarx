@@ -14,12 +14,11 @@ class Enarx < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/platten/enarx"
-    sha256 cellar: :any_skip_relocation, big_sur:      "648938a358b1b2eb56077f13dbed774e318370e85a9b935281a8acf9c49203c1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "862f9927ad0a3640af93dcf35a2a50cc63d6561d74959efb1ab7483ea136c286"
+    sha256 cellar: :any_skip_relocation, big_sur: "648938a358b1b2eb56077f13dbed774e318370e85a9b935281a8acf9c49203c1"
   end
 
   depends_on "rustup-init" => :build
-  depends_on "rustup-init" => :test
+  depends_on :macos
 
   def install
     system "#{Formula["rustup-init"].bin}/rustup-init", "-qy", "--no-modify-path"
