@@ -12,11 +12,6 @@ class Enarx < Formula
     strategy :github_latest
   end
 
-  bottle do
-    root_url "https://ghcr.io/v2/enarx/enarx"
-    sha256 cellar: :any_skip_relocation, big_sur: "ba58696b3355fdfe8760d20d4e5148e9a2206d7eb6df73f64c06444105d138ef"
-  end
-
   depends_on "rustup-init" => :build
   depends_on :macos
 
