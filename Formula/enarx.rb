@@ -2,8 +2,8 @@ class Enarx < Formula
   desc "Confidential Computing with WASM"
   homepage "https://enarx.dev/"
   url "https://github.com/enarx/enarx.git",
-    tag:      "v0.6.4",
-    revision: "eff89e2aa738ee28744d3751f9ba1c71d26d66ec"
+    tag:      "v0.7.0",
+    revision: "e74f4d4c5d996fa3f51cbb03259275a12f6ef84b"
   license "Apache-2.0"
   head "https://github.com/enarx/enarx.git", branch: "main"
 
